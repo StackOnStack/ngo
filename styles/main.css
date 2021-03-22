@@ -181,9 +181,6 @@ body {
   .container {
     height: 60vh;
   }
-  .container .banner__image {
-    width: 65%;
-  }
 }
 
 @media only screen and (min-width: 1203px) {
