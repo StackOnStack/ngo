@@ -183,12 +183,16 @@ body {
   }
 }
 
-@media only screen and (min-width: 1203px) {
-  .banner__description h1 {
-    font-size: 35px;
+@media only screen and (min-width: 1270px) {
+  .container {
+    height: 70vh;
   }
-  .banner__description p {
-    font-size: 16px;
+  .container .banner__image {
+    background-position: 0 -100px;
+    width: 50%;
+  }
+  .banner__description {
+    left: 10%;
   }
 }
 /*# sourceMappingURL=main.css.map */
