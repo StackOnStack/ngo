@@ -181,6 +181,9 @@ body {
   .container {
     height: 60vh;
   }
+  .accomplishments {
+    top: -12em;
+  }
 }
 
 @media only screen and (min-width: 1270px) {
@@ -192,8 +195,11 @@ body {
     width: 50%;
   }
   .banner__description {
-    top: -35vh;
+    top: -40vh;
     left: 10%;
+  }
+  .accomplishments {
+    top: -12em;
   }
 }
 /*# sourceMappingURL=main.css.map */
