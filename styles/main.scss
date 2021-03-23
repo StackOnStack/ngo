@@ -1,3 +1,4 @@
+// remember to fix hover classes for the buttons mr nelson
 body{
     margin:0;
     padding:0 0 0 1em;
@@ -13,7 +14,9 @@ body{
     .hamburger-menu{
         position: relative;
         top:2em;
-        height:2.2em;
+        height:3em;
+        border:none;
+        background:none;
     }
 
     .banner__image{
@@ -51,35 +54,40 @@ body{
         line-height: 1.4em;
         width:130%;
     }
+}
 
-    .pair-btns{
-        margin-top: 2em;
-        display:flex;
-        justify-content:space-between;
-        .pair-btns__colored{
-            background-color:#000000;
-            color:#ffffff;
-            font-weight:400;
-            padding:.65em;
-            border-radius:2px;
-            border:none;
-            width:50%;
-        }
+.pair-btns{
+    margin-top: 2em;
+    display:flex;
+    justify-content:space-between;
+    .pair-btns__colored{
+        background-color:#000000;
+        color:#ffffff;
+        font-weight:400;
+        padding:.65em;
+        border-radius:2px;
+        border:none;
+        width:50%;
+    }
 
-        .pair-btns__plain{
-            position: relative;
-            width:48%;
-            text-align:center;
-            margin-right:4em;
-            border:none;
-            background-color: rgba(255,255,255, 0);
-            svg{
-                position:absolute;
-                bottom:4px;
-            }
+    .pair-btns__plain{
+        position: relative;
+        width:48%;
+        text-align:center;
+        margin-right:4em;
+        border:none;
+        background-color: rgba(255,255,255, 0);
+        svg{
+            position:absolute;
+            bottom:4px;
         }
     }
+    // remember to come back to work on this
+    .pair-btns__colored:hover, .pair-btns__plain:hover{
+        outline:2px solid yellow;
+    }
 }
+
 
 .accomplishments{
     width:75%;
@@ -113,7 +121,65 @@ body{
     }
 }
 
+.about{
+    position:relative;
+    top:-8vh;
+    display:flex;
+    .about__image-container{
+        width:32%;
+    }
 
+    .about__description{
+        width:60%;
+        text-align: right;
+        h2{
+            margin:0;
+            font-size:20px;
+            font-weight:800;
+            line-height:1.2em;
+            .pencil-swoosh1{
+                position:relative;
+                svg{
+                    position:absolute;
+                    bottom:-.1em;
+                    left:-1em;
+                    z-index:-1;
+                }
+            }
+        }
+        h3{
+            font-size:14px;
+            font-weight:600;
+            line-height:1.4em;
+        }
+        p{
+            font-size:12px;
+            line-height:1.4em;
+        }
+    }
+}
+
+.pair-btns1{
+    margin: 2em 0 0 2em;
+    display:flex;
+    justify-content:space-between;
+    width:85%;
+    .pair-btns__plain1{
+        border:none;
+        background:none;
+        font-size:12px;
+        svg{
+            position:relative;
+            top:.5em;
+        }
+    }
+    .pair-btns__colored1{
+        font-size:12px;
+        background-color:#000000;
+        color:#ffffff;
+        border:none;
+    }
+}
 
 // Responsive style rules
 
@@ -200,5 +266,10 @@ body{
     .banner__description{
         top: -40vh;
         left:13%;
+        .pencil-swoosh{
+            svg{
+                top:2.2em;
+            }
+        }
     }
 }
