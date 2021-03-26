@@ -135,7 +135,7 @@ body {
 }
 
 .about {
-  width: 100%;
+  width: 98%;
   position: relative;
   top: -5vh;
   display: -webkit-box;
@@ -227,6 +227,21 @@ body {
   background-color: #000000;
   color: #ffffff;
   border: none;
+}
+
+@media only screen and (max-width: 623px) {
+  .about {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .about__image-container {
+    width: 300px;
+    height: 250px;
+  }
+  .about .about__description {
+    width: 80%;
+    left: 2em;
+  }
 }
 
 @media only screen and (min-width: 520px) {
