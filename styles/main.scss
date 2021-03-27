@@ -281,8 +281,32 @@ body{
             }
             p{
                 font-size:12px;
+                text-align:left;
             }
         }
+    }
+}
+
+.twitter-posts{
+    margin:6em 0 0 0;
+    header{
+        h2{
+            text-align: center;
+            margin:0 0 3em 0;
+        }
+    }
+
+    .twitter-posts-container{
+        width:80%;
+        margin:0 auto;
+        display:flex;
+        overflow:auto;
+        white-space: nowrap;
+    }
+
+    .twitter-tweet{
+        width:40%;
+        margin-right:.75em;
     }
 }
 
@@ -434,11 +458,14 @@ body{
         }
     }
 
-    .success-stories{
+    .success-stories,.blog-section, .twitter-posts{
         header{
             h2{
                 font-size: 40px;
+                line-height:1.2em;
             }
         }
     }
+
+ 
 }

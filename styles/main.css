@@ -332,6 +332,31 @@ body {
 
 .blog-section .blog-container .blog-post p {
   font-size: 12px;
+  text-align: left;
+}
+
+.twitter-posts {
+  margin: 6em 0 0 0;
+}
+
+.twitter-posts header h2 {
+  text-align: center;
+  margin: 0 0 3em 0;
+}
+
+.twitter-posts .twitter-posts-container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.twitter-posts .twitter-tweet {
+  width: 40%;
+  margin-right: .75em;
 }
 
 @media only screen and (max-width: 623px) {
@@ -453,8 +478,9 @@ body {
     font-size: 16px;
     line-height: 1.5em;
   }
-  .success-stories header h2 {
+  .success-stories header h2, .blog-section header h2, .twitter-posts header h2 {
     font-size: 40px;
+    line-height: 1.2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
