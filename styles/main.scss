@@ -1,7 +1,7 @@
 // remember to fix hover classes for the buttons mr nelson
 body{
     margin:0;
-    padding:0 0 0 1em;
+    // padding:0 0 0 1em;
     font-family:'Poppins', sans-serif;
 }
 
@@ -310,6 +310,73 @@ body{
     }
 }
 
+footer{
+     margin:6em 0 0 0;
+    #mc_embed_signup{
+        position:relative;
+        background:#fff; clear:left; 
+        font:14px Helvetica,Arial,sans-serif; 
+        width:100%;
+        height:25vh;
+
+        header{
+            width:100%;
+            margin:0 auto;
+            position:absolute;
+            z-index: 5;
+            h2{
+                color:#ffffff;
+                font-size:24px;
+                text-align:center !important;
+            }
+        }
+        form{
+            position:absolute;
+            top:50%;
+            width:100%;
+            z-index: 5;
+            margin:0 auto;
+
+            .clear{
+                width:80%;
+                margin:0 auto;
+                .email{
+                    text-align:center;
+                    border-radius:15px 0 0 15px;
+                    width:60%;
+                    padding:1.5em;
+                    color:#000000 !important;
+                    font-size:12px;
+                }
+
+                .button{
+                    background-color:#F3C41A;
+                    position: relative;
+                    left:-10px;
+                    width:30%;
+                    height:38px;
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+        }
+
+        .mask{
+            width:100%;
+            height:100%;
+            background-color: rgba(0,0,0,0.3);
+            position:absolute;
+            
+        }
+
+        img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            object-position:50% 50%;
+        }
+    }
+}
+
 
 // Responsive style rules
 
@@ -361,7 +428,7 @@ body{
 }
 
 @media only screen and (min-width:816px){
-    body{
+    .banner, .accomplishments, .about, .success-stories, .blog-section, .twitter-posts{
         padding:0 0 0 2em;
     }
     .banner__description{
@@ -467,5 +534,12 @@ body{
         }
     }
 
+    footer{
+        form{
+            .clear{
+                width: 30% !important;
+            }
+        }
+    }
  
 }

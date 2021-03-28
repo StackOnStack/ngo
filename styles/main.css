@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0 0 0 1em;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -359,6 +358,79 @@ body {
   margin-right: .75em;
 }
 
+footer {
+  margin: 6em 0 0 0;
+}
+
+footer #mc_embed_signup {
+  position: relative;
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica,Arial,sans-serif;
+  width: 100%;
+  height: 25vh;
+}
+
+footer #mc_embed_signup header {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 5;
+}
+
+footer #mc_embed_signup header h2 {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center !important;
+}
+
+footer #mc_embed_signup form {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 5;
+  margin: 0 auto;
+}
+
+footer #mc_embed_signup form .clear {
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer #mc_embed_signup form .clear .email {
+  text-align: center;
+  border-radius: 15px 0 0 15px;
+  width: 60%;
+  padding: 1.5em;
+  color: #000000 !important;
+  font-size: 12px;
+}
+
+footer #mc_embed_signup form .clear .button {
+  background-color: #F3C41A;
+  position: relative;
+  left: -10px;
+  width: 30%;
+  height: 38px;
+  border-radius: 0 15px 15px 0;
+}
+
+footer #mc_embed_signup .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+
+footer #mc_embed_signup img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
 @media only screen and (max-width: 623px) {
   .about {
     -ms-flex-wrap: wrap;
@@ -399,7 +471,7 @@ body {
 }
 
 @media only screen and (min-width: 816px) {
-  body {
+  .banner, .accomplishments, .about, .success-stories, .blog-section, .twitter-posts {
     padding: 0 0 0 2em;
   }
   .banner__description h1 {
@@ -481,6 +553,9 @@ body {
   .success-stories header h2, .blog-section header h2, .twitter-posts header h2 {
     font-size: 40px;
     line-height: 1.2em;
+  }
+  footer form .clear {
+    width: 30% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
