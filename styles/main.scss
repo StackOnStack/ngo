@@ -321,10 +321,12 @@ footer{
 
         header{
             width:100%;
-            margin:0 auto;
+            margin:1.2em 0 0 0;
             position:absolute;
             z-index: 5;
             h2{
+                width:50%;
+                margin:0 auto;
                 color:#ffffff;
                 font-size:24px;
                 text-align:center !important;
@@ -429,7 +431,7 @@ footer{
 
 @media only screen and (min-width:816px){
     .banner, .accomplishments, .about, .success-stories, .blog-section, .twitter-posts{
-        padding:0 0 0 2em;
+        padding:0 0 0 1.6em;
     }
     .banner__description{
         h1{
