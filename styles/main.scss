@@ -1,6 +1,7 @@
+// remember to fix hover classes for the buttons mr nelson
 body{
     margin:0;
-    padding:0 0 0 1em;
+    // padding:0 0 0 1em;
     font-family:'Poppins', sans-serif;
 }
 
@@ -13,7 +14,9 @@ body{
     .hamburger-menu{
         position: relative;
         top:2em;
-        height:2.2em;
+        height:3em;
+        border:none;
+        background:none;
     }
 
     .banner__image{
@@ -51,38 +54,42 @@ body{
         line-height: 1.4em;
         width:130%;
     }
+}
 
-    .pair-btns{
-        margin-top: 2em;
-        display:flex;
-        justify-content:space-between;
-        .pair-btns__colored{
-            background-color:#000000;
-            color:#ffffff;
-            font-weight:400;
-            padding:.65em;
-            border-radius:2px;
-            border:none;
-            width:50%;
-        }
+.pair-btns{
+    margin-top: 2em;
+    display:flex;
+    justify-content:space-between;
+    .pair-btns__colored{
+        background-color:#000000;
+        color:#ffffff;
+        font-weight:400;
+        padding:.65em;
+        border-radius:2px;
+        border:none;
+        width:50%;
+    }
 
-        .pair-btns__plain{
-            position: relative;
-            width:48%;
-            text-align:center;
-            margin-right:4em;
-            border:none;
-            background-color: rgba(255,255,255, 0);
-            svg{
-                position:absolute;
-                bottom:4px;
-            }
+    .pair-btns__plain{
+        position: relative;
+        width:48%;
+        text-align:center;
+        margin-right:4em;
+        border:none;
+        background-color: rgba(255,255,255, 0);
+        svg{
+            position:absolute;
+            bottom:4px;
         }
+    }
+    // remember to come back to work on this
+    .pair-btns__colored:hover, .pair-btns__plain:hover{
+        outline:2px solid yellow;
     }
 }
 
+
 .accomplishments{
-    border:1px solid red;
     width:75%;
     margin:0 auto;
     position:relative;
@@ -114,17 +121,281 @@ body{
     }
 }
 
+.about{
+    width:98%;
+    position:relative;
+    top:-5vh;
+    display:flex;
+    justify-content: space-between;
+    .about__image-container{
+        width:40%;
+        z-index:-1;
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .about__description{
+        position:relative;
+        width:58%;
+        padding:0 1em 0 0;
+        text-align: right;
+        h2{
+            margin:0 0 1.5em 0;
+            font-size:20px;
+            font-weight:800;
+            line-height:1.2em;
+            
+        }
+        h3{
+            margin:0 0 1.5em 0;
+            font-size:14px;
+            font-weight:600;
+            line-height:1.4em;
+        }
+        p{
+            font-size:12px;
+            line-height:1.4em;
+        }
+    }
+}
+
+.pencil-swoosh1{
+    position:relative;
+    svg{
+        position:absolute;
+        bottom:.1em;
+        left:.1em;
+        z-index:-1;
+    }
+}
+
+.pair-btns1{
+    position:absolute;
+    right:0;
+    padding:0 1em 0 0;
+    margin:1.4em 0 0 0;
+    display:flex;
+    justify-content:space-between;
+    width:180px;
+    .pair-btns__plain1{
+        border:none;
+        background:none;
+        font-size:12px;
+        svg{
+            position:relative;
+            top:.7em;
+        }
+    }
+    .pair-btns__colored1{
+        font-size:12px;
+        background-color:#000000;
+        color:#ffffff;
+        border:none;
+    }
+}
+
+.success-stories{
+    margin:6em 0 0 0;
+    header{
+        text-align: center;
+        margin:0 0 3em 0;
+    }
+
+    .stories-container{
+        margin:0 auto;
+        width:80%;
+        display:grid;
+        grid-gap:.7em;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        .story{
+            .story__image-container{
+                width:100%;
+                img{
+                    width:100%;
+                    height:25vh;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
+    
+            }
+            p{
+                font-size:12px;
+            }
+        }
+    }
+    
+
+}
+
+.blog-section{
+    margin:6em 0 0 0;
+
+    header{
+        text-align: center;
+        margin:0 0 3em 0;
+    }
+    .blog-container{
+        width:80%;
+        margin:0 auto;
+        display:grid;
+        grid-gap:.85em;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        .blog-post{
+            background-color:#F9F9FA;
+            .image-container{
+                position:relative;
+                width:100%;
+                height:25vh;
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit:cover;
+                    object-position: 50% 50%;
+                }
+                .post-date{
+                    background-color:#F3C41A;
+                    width:70px;
+                    position:absolute;
+                    bottom:0;
+                    left:0;
+                    h4,p{
+                        color:#ffffff;
+                        margin:.25em 0;
+                        text-align:center;
+                    }
+                    h4{
+                        font-size:18px;
+                        font-weight:800;
+                    }
+                    p{
+                        font-size:12px;
+                    }
+                }
+            }
+            h3,p{
+                padding:0 0 0 .85em;
+            }
+            p{
+                font-size:12px;
+                text-align:left;
+            }
+        }
+    }
+}
+
+.twitter-posts{
+    margin:6em 0 0 0;
+    header{
+        h2{
+            text-align: center;
+            margin:0 0 3em 0;
+        }
+    }
+
+    .twitter-posts-container{
+        width:80%;
+        margin:0 auto;
+        display:flex;
+        overflow:auto;
+        white-space: nowrap;
+    }
+
+    .twitter-tweet{
+        width:40%;
+        margin-right:.75em;
+    }
+}
+
+footer{
+     margin:6em 0 0 0;
+    #mc_embed_signup{
+        position:relative;
+        background:#fff; clear:left; 
+        font:14px Helvetica,Arial,sans-serif; 
+        width:100%;
+        height:25vh;
+
+        header{
+            width:100%;
+            margin:1.2em 0 0 0;
+            position:absolute;
+            z-index: 5;
+            h2{
+                width:50%;
+                margin:0 auto;
+                color:#ffffff;
+                font-size:24px;
+                text-align:center !important;
+            }
+        }
+        form{
+            position:absolute;
+            top:50%;
+            width:100%;
+            z-index: 5;
+            margin:0 auto;
+
+            .clear{
+                width:80%;
+                margin:0 auto;
+                .email{
+                    text-align:center;
+                    border-radius:15px 0 0 15px;
+                    width:60%;
+                    padding:1.5em;
+                    color:#000000 !important;
+                    font-size:12px;
+                }
+
+                .button{
+                    background-color:#F3C41A;
+                    position: relative;
+                    left:-10px;
+                    width:30%;
+                    height:38px;
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+        }
+
+        .mask{
+            width:100%;
+            height:100%;
+            background-color: rgba(0,0,0,0.3);
+            position:absolute;
+            
+        }
+
+        img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            object-position:50% 50%;
+        }
+    }
+}
 
 
 // Responsive style rules
-// @media only screen and (max-width:557px){
-//     .container{
-//         .banner__image{
-//             height:60vh;
-//         }
-//     }
 
-// }
+@media only screen and (max-width: 623px){
+    .about{
+        flex-wrap: wrap;
+        .about__image-container{
+            width:300px;
+            height:250px;
+
+        }
+        .about__description{
+            width:80%;
+            left:2em;
+        }
+    }
+}
 
 @media only screen and (min-width:520px){
     .banner__description{
@@ -159,8 +430,8 @@ body{
 }
 
 @media only screen and (min-width:816px){
-    body{
-        padding:0 0 0 2em;
+    .banner, .accomplishments, .about, .success-stories, .blog-section, .twitter-posts{
+        padding:0 0 0 1.6em;
     }
     .banner__description{
         h1{
@@ -182,16 +453,95 @@ body{
             }
         }
     }
-}
 
-@media only screen and (min-width:1203px){
-
-    .banner__description{
-        h1{
-            font-size:35px;
-        }
-        p{
-            font-size:16px;
+    .about{
+        .about__description{
+            h2{
+                font-size:30px;
+            }
+            h3{
+                font-size: 21px;
+            }
+            p{
+                font-size:16px;
+            }
         }
     }
+}
+
+@media only screen and (min-width:839px){
+    .banner__description{
+            top:-30vh;
+        }
+
+    .container{
+        height:60vh;
+    }
+    .accomplishments{
+        top:-25vh;
+    }
+}
+
+@media only screen and (min-width:1270px){
+    .container{
+        height:70vh;
+        .banner__image{
+            background-position: 0 -100px;
+            width:50%;
+        }
+    }
+
+    .banner__description{
+        top: -40vh;
+        left:13%;
+        .pencil-swoosh{
+            svg{
+                top:2.2em;
+            }
+        }
+    }
+
+    .about{
+        .about__image-container{
+            right:-5%;
+        }
+        .about__description{
+            height:50vh;
+            width:40%;
+            position:relative;
+            left:-10%;
+            margin-top:5em;
+
+            h2{
+                font-size:40px;
+                line-height:1.2em;
+            }
+            h3{
+                font-size: 21px;
+                line-height:1.3em;
+            }
+            p{
+                font-size:16px;
+                line-height:1.5em;
+            }
+        }
+    }
+
+    .success-stories,.blog-section, .twitter-posts{
+        header{
+            h2{
+                font-size: 40px;
+                line-height:1.2em;
+            }
+        }
+    }
+
+    footer{
+        form{
+            .clear{
+                width: 30% !important;
+            }
+        }
+    }
+ 
 }
