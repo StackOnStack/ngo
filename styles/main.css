@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-nav {
+#desktop-navbar, #mobile-navbar {
   width: 35%;
   position: absolute;
   z-index: 5;
@@ -11,7 +11,7 @@ nav {
   padding: 2em 0 0 0;
 }
 
-nav ul {
+#desktop-navbar ul, #mobile-navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,11 +20,11 @@ nav ul {
           justify-content: space-between;
 }
 
-nav ul li {
+#desktop-navbar ul li, #mobile-navbar ul li {
   list-style-type: none;
 }
 
-nav ul li a {
+#desktop-navbar ul li a, #mobile-navbar ul li a {
   text-decoration: none;
   color: #000000;
   font-size: 14px;
@@ -33,10 +33,14 @@ nav ul li a {
   cursor: pointer;
 }
 
-nav ul li a:hover {
+#desktop-navbar ul li a:hover, #mobile-navbar ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   color: #ffffff;
+}
+
+#mobile-navbar {
+  display: none;
 }
 
 .banner {
@@ -490,25 +494,40 @@ footer #mc_embed_signup img {
 }
 
 @media only screen and (max-width: 768px) {
-  nav {
-    display: block;
+  #desktop-navbar {
+    display: none;
+  }
+  #mobile-navbar {
+    position: fixed;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #000000;
   }
-  nav ul {
+  #mobile-navbar ul {
     display: block;
   }
-  nav ul li {
-    margin-top: 2em;
+  #mobile-navbar ul li {
+    margin: 2em 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  nav ul li a {
-    font-size: 30px;
+  #mobile-navbar ul li a {
+    font-size: 24px;
+    font-weight: 600;
     color: #ffffff;
   }
+  #mobile-navbar ul li button {
+    margin: 0 3em 0 0;
+    border: none;
+    background: none;
+  }
   .container .hamburger-menu {
-    visibility: hidden;
+    visibility: visible;
   }
 }
 

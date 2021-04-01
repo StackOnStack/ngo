@@ -12,9 +12,23 @@
 </head>
 <body>
 
-    <nav>
+    <nav id="mobile-navbar">
         <ul>
-            <li><a href="index.html">Mission</a></li>
+            <li> 
+                <a href="index.html">Mission</a>
+                <button id="cancel-menu">
+                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="40px" height="40px"><path d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z"/></svg>
+                </button>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <nav id="desktop-navbar">
+        <ul>
+            <li> <a href="index.html">Mission</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
@@ -24,7 +38,7 @@
     <section class="banner">
 
         <div class="container">
-            <button class ="hamburger-menu">
+            <button class ="hamburger-menu" id="hamburger-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 0 24 24" width="34px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
             <div class="banner__image">
@@ -276,7 +290,7 @@
     </footer>
 
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+    <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -288,5 +302,6 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+    <script src="scripts/app.js"></script>
 </body>
 </html>
