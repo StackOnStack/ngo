@@ -8,7 +8,7 @@ body {
   position: absolute;
   z-index: 5;
   left: 13%;
-  padding: 2em 0 0 0;
+  padding: 1em 0 0 0;
 }
 
 #desktop-navbar ul, #mobile-navbar ul {
@@ -22,6 +22,15 @@ body {
 
 #desktop-navbar ul li, #mobile-navbar ul li {
   list-style-type: none;
+}
+
+#desktop-navbar ul li img, #mobile-navbar ul li img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 #desktop-navbar ul li a, #mobile-navbar ul li a {
@@ -160,8 +169,8 @@ body {
 
 .accomplishments .accomplishments__list div {
   margin: 0 auto;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .accomplishments .accomplishments__list div img {
@@ -541,6 +550,12 @@ footer #mc_embed_signup img {
   .container .banner__image {
     background-position: -55% -80px;
   }
+  .success-stories {
+    display: block;
+  }
+  .blog-section {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 776px) {
@@ -613,15 +628,19 @@ footer #mc_embed_signup img {
   .banner__description .pencil-swoosh svg {
     top: 2.2em;
   }
+  .accomplishments {
+    width: 55%;
+    top: -11em;
+  }
   .accomplishments .accomplishments__list div {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .accomplishments .accomplishments__list h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .accomplishments .accomplishments__list p {
-    font-size: 14px;
+    font-size: 11px;
   }
   .about .about__image-container {
     right: -5%;
@@ -642,7 +661,7 @@ footer #mc_embed_signup img {
     line-height: 1.3em;
   }
   .about .about__description p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5em;
   }
   .success-stories header h2, .blog-section header h2, .twitter-posts header h2 {
