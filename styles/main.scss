@@ -5,43 +5,51 @@ body{
     font-family:'Poppins', sans-serif;
 }
 
-#desktop-navbar, #mobile-navbar{
-    width:35%;
+.mobile-logo{
+    display:none;
+    width:60px;
+    height:60px;
     position:absolute;
-    z-index:5;
-    left:13%;
-    padding:1em 0 0 0;
-    ul{
-        display:flex;
-        justify-content: space-between;
-        li{
-            list-style-type: none;
-            img{
-                position:relative;
-                top:-2em;
-                width:100px;
-                height:100px;
-                object-fit: cover;
-            }
-            a{
-                text-decoration: none;
-                color:#000000;
-                font-size:14px;
-                font-weight:600;
-                padding:1em;
-                cursor: pointer;
-            }
-            a:hover{
-                background-color: rgba(0,0,0,0.3);
-                border-radius:15px;
-                color:#ffffff;
+    left:6%;
+    top:3vh;
+}
+#desktop-navbar, #mobile-navbar{
+        width:35%;
+        position:absolute;
+        z-index:5;
+        left:13%;
+        padding:1em 0 0 0;
+        ul{
+            display:flex;
+            justify-content: space-between;
+            li{
+                list-style-type: none;
+                img{
+                    position:relative;
+                    top:-2em;
+                    width:100px;
+                    height:100px;
+                    object-fit: cover;
+                }
+                a{
+                    text-decoration: none;
+                    color:#000000;
+                    font-size:14px;
+                    font-weight:600;
+                    padding:1em;
+                    cursor: pointer;
+                }
+                a:hover{
+                    background-color: rgba(0,0,0,0.3);
+                    border-radius:15px;
+                    color:#ffffff;
+                }
             }
         }
-    }
 }
-
+    
 #mobile-navbar{
-    display: none;
+     display: none;
 }
 .banner{
     padding:0 0 0 1em;
@@ -55,6 +63,7 @@ body{
 
     .hamburger-menu{
         position: relative;
+        left:85%;
         top:2em;
         height:3em;
         border:none;
@@ -183,7 +192,7 @@ body{
 
     .about__description{
         position:relative;
-        width:58%;
+        width:53%;
         padding:0 1em 0 0;
         text-align: right;
         h2{
@@ -458,6 +467,10 @@ footer{
 
 @media only screen and (max-width: 768px){
 
+    .mobile-logo{
+        display:block;
+    }
+
     #desktop-navbar{
         display:none;
     }
@@ -522,11 +535,16 @@ footer{
         top:-15vh;
 
         p{
-            width:60%;
+            width:50%;
         }
         .pair-btns{
             width:50%;
         }
+    }
+
+    #desktop-navbar{
+        width:65%;
+        left:0;
     }
 
 }
@@ -585,6 +603,12 @@ footer{
 }
 
 @media only screen and (min-width:1270px){
+
+    #desktop-navbar{
+        width:40%;
+        left:13%;
+    }
+
     .container{
         height:70vh;
         .banner__image{
