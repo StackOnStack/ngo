@@ -25,12 +25,12 @@ body {
 }
 
 #desktop-navbar ul li img, #mobile-navbar ul li img {
-  width: 60px;
-  height: 60px;
+  position: relative;
+  top: -2em;
+  width: 100px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
 }
 
 #desktop-navbar ul li a, #mobile-navbar ul li a {
@@ -235,6 +235,7 @@ body {
 }
 
 .about .about__description p {
+  text-align: left;
   font-size: 12px;
   line-height: 1.4em;
 }
@@ -487,6 +488,15 @@ footer #mc_embed_signup img {
      object-position: 50% 50%;
 }
 
+@media only screen and (max-width: 503px) {
+  .success-stories .stories-container {
+    display: block;
+  }
+  .blog-section .blog-container {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 623px) {
   .about {
     -ms-flex-wrap: wrap;
@@ -549,12 +559,6 @@ footer #mc_embed_signup img {
 @media only screen and (min-width: 699px) {
   .container .banner__image {
     background-position: -55% -80px;
-  }
-  .success-stories {
-    display: block;
-  }
-  .blog-section {
-    display: block;
   }
 }
 
@@ -647,7 +651,7 @@ footer #mc_embed_signup img {
   }
   .about .about__description {
     height: 50vh;
-    width: 40%;
+    width: 30%;
     position: relative;
     left: -10%;
     margin-top: 5em;

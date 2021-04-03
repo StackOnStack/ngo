@@ -17,10 +17,11 @@ body{
         li{
             list-style-type: none;
             img{
-                width:60px;
-                height:60px;
+                position:relative;
+                top:-2em;
+                width:100px;
+                height:100px;
                 object-fit: cover;
-                object-position: 50% 50%;
             }
             a{
                 text-decoration: none;
@@ -199,6 +200,7 @@ body{
             line-height:1.4em;
         }
         p{
+            text-align: left;
             font-size:12px;
             line-height:1.4em;
         }
@@ -426,6 +428,19 @@ footer{
 
 // maxwidth responsive styles
 
+@media only screen and (max-width : 503px){
+    .success-stories{
+        .stories-container{
+            display:block;
+        }
+    }
+    .blog-section{
+        .blog-container{
+            display:block;
+        }
+    }
+}
+
 @media only screen and (max-width: 623px){
     .about{
         flex-wrap: wrap;
@@ -498,13 +513,6 @@ footer{
         .banner__image{
             background-position: -55% -80px ;
         }
-    }
-
-    .success-stories{
-        display:block;
-    }
-    .blog-section{
-        display:block;
     }
 }
 
@@ -617,7 +625,7 @@ footer{
         }
         .about__description{
             height:50vh;
-            width:40%;
+            width:30%;
             position:relative;
             left:-10%;
             margin-top:5em;
