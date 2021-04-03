@@ -365,6 +365,8 @@ body{
 
 footer{
      margin:6em 0 0 0;
+     height:40vh;
+     background-color:#070726;
     #mc_embed_signup{
         position:relative;
         background:#fff; clear:left; 
@@ -428,6 +430,36 @@ footer{
             height:100%;
             object-fit:cover;
             object-position:50% 50%;
+        }
+    }
+
+    .contact{
+        position:relative;
+        top:1vh;
+        width:80%;
+        margin:0 auto;
+        color:#ffffff;
+        text-align:center;
+        .contact-details{
+            display:flex;
+            text-align:center;
+            font-size:13px;
+            justify-content: space-between;
+            a{
+                margin:.85em 0 0 0;
+                color:#ffffff;
+            }
+        }
+    
+        .social-media-details{
+            display:flex;
+            justify-content: space-between;
+            width:30%;
+            margin:0 auto;
+            li{
+                list-style-type: none;
+            }
+    
         }
     }
 }
@@ -683,6 +715,11 @@ footer{
             .clear{
                 width: 30% !important;
             }
+        }
+
+        .contact{
+            top:3vh;
+            width:20%;
         }
     }
  

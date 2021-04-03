@@ -425,6 +425,8 @@ body {
 
 footer {
   margin: 6em 0 0 0;
+  height: 40vh;
+  background-color: #070726;
 }
 
 footer #mc_embed_signup {
@@ -496,6 +498,46 @@ footer #mc_embed_signup img {
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+}
+
+footer .contact {
+  position: relative;
+  top: 1vh;
+  width: 80%;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer .contact .contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-size: 13px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .contact .contact-details a {
+  margin: .85em 0 0 0;
+  color: #ffffff;
+}
+
+footer .contact .social-media-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+}
+
+footer .contact .social-media-details li {
+  list-style-type: none;
 }
 
 @media only screen and (max-width: 503px) {
@@ -695,6 +737,10 @@ footer #mc_embed_signup img {
   }
   footer form .clear {
     width: 30% !important;
+  }
+  footer .contact {
+    top: 3vh;
+    width: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
