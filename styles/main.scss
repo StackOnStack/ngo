@@ -80,7 +80,7 @@ body {
     }
 
     .banner__image {
-        background-image: url("https://firebasestorage.googleapis.com/v0/b/belmat-brothers.appspot.com/o/africamap.png?alt=media&token=1c6d89fa-3dd2-4323-97cc-86533efc411c");
+        background-image: url("https://res.cloudinary.com/dclcrd741/image/upload/q_auto:best/v1621353686/africamap_vbr6ut.png");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -409,7 +409,7 @@ body {
 
 footer {
     margin: 6em 0 0 0;
-    height: 80vh;
+    // height: 80vh;
     background-color: #070726;
 
     #mc_embed_signup {
