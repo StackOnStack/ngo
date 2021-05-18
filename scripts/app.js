@@ -17,7 +17,6 @@ cancelMenu.addEventListener("click", function(){
 let slow = setInterval(()=>{
     if(window.screen.width >768){
         hamburgerMenu.style.visibility="hidden";
-        console.log("hello");
     }else{
         hamburgerMenu.style.visibility="visible";
     }
