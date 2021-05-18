@@ -3,6 +3,74 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.mobile-logo {
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 6%;
+  top: 3vh;
+}
+
+#desktop-navbar,
+#mobile-navbar {
+  width: 35%;
+  position: absolute;
+  z-index: 5;
+  left: 13%;
+  padding: 1em 0 0 0;
+}
+
+#desktop-navbar ul,
+#mobile-navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#desktop-navbar ul li,
+#mobile-navbar ul li {
+  list-style-type: none;
+}
+
+#desktop-navbar ul li img,
+#mobile-navbar ul li img {
+  position: relative;
+  top: -2em;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#desktop-navbar ul li a,
+#mobile-navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1em;
+  cursor: pointer;
+}
+
+#desktop-navbar ul li a:hover,
+#mobile-navbar ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+#mobile-navbar {
+  display: none;
+}
+
+.banner {
+  padding: 0 0 0 1em;
+}
+
 .container {
   position: relative;
   display: -webkit-box;
@@ -16,14 +84,16 @@ body {
 
 .container .hamburger-menu {
   position: relative;
+  left: 85%;
   top: 2em;
   height: 3em;
   border: none;
   background: none;
+  visibility: hidden;
 }
 
 .container .banner__image {
-  background-image: url("../assets/africamap.png");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/belmat-brothers.appspot.com/o/africamap.png?alt=media&token=1c6d89fa-3dd2-4323-97cc-86533efc411c");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -92,7 +162,8 @@ body {
   bottom: 4px;
 }
 
-.pair-btns .pair-btns__colored:hover, .pair-btns .pair-btns__plain:hover {
+.pair-btns .pair-btns__colored:hover,
+.pair-btns .pair-btns__plain:hover {
   outline: 2px solid yellow;
 }
 
@@ -115,8 +186,8 @@ body {
 
 .accomplishments .accomplishments__list div {
   margin: 0 auto;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .accomplishments .accomplishments__list div img {
@@ -161,7 +232,7 @@ body {
 
 .about .about__description {
   position: relative;
-  width: 58%;
+  width: 53%;
   padding: 0 1em 0 0;
   text-align: right;
 }
@@ -181,6 +252,7 @@ body {
 }
 
 .about .about__description p {
+  text-align: left;
   font-size: 12px;
   line-height: 1.4em;
 }
@@ -310,7 +382,8 @@ body {
   left: 0;
 }
 
-.blog-section .blog-container .blog-post .image-container .post-date h4, .blog-section .blog-container .blog-post .image-container .post-date p {
+.blog-section .blog-container .blog-post .image-container .post-date h4,
+.blog-section .blog-container .blog-post .image-container .post-date p {
   color: #ffffff;
   margin: .25em 0;
   text-align: center;
@@ -325,7 +398,8 @@ body {
   font-size: 12px;
 }
 
-.blog-section .blog-container .blog-post h3, .blog-section .blog-container .blog-post p {
+.blog-section .blog-container .blog-post h3,
+.blog-section .blog-container .blog-post p {
   padding: 0 0 0 .85em;
 }
 
@@ -360,13 +434,15 @@ body {
 
 footer {
   margin: 6em 0 0 0;
+  height: 80vh;
+  background-color: #070726;
 }
 
 footer #mc_embed_signup {
   position: relative;
   background: #fff;
   clear: left;
-  font: 14px Helvetica,Arial,sans-serif;
+  font: 14px Helvetica, Arial, sans-serif;
   width: 100%;
   height: 25vh;
 }
@@ -433,6 +509,47 @@ footer #mc_embed_signup img {
      object-position: 50% 50%;
 }
 
+footer .footer-content-container {
+  width: 80%;
+  padding: 2em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+}
+
+footer .footer-content-container .footer-description {
+  width: 35%;
+  margin: 3em 0 0 0;
+}
+
+footer .footer-content-container ul li {
+  list-style-type: none;
+  margin-top: 1em;
+}
+
+footer .footer-content-container ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .footer-content-container ul li a:hover {
+  color: #F3C41A;
+}
+
+@media only screen and (max-width: 503px) {
+  .success-stories .stories-container {
+    display: block;
+  }
+  .blog-section .blog-container {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 623px) {
   .about {
     -ms-flex-wrap: wrap;
@@ -445,6 +562,47 @@ footer #mc_embed_signup img {
   .about .about__description {
     width: 80%;
     left: 2em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-logo {
+    display: block;
+  }
+  #desktop-navbar {
+    display: none;
+  }
+  #mobile-navbar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+  }
+  #mobile-navbar ul {
+    display: block;
+  }
+  #mobile-navbar ul li {
+    margin: 2em 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #mobile-navbar ul li a {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  #mobile-navbar ul li button {
+    margin: 0 3em 0 0;
+    border: none;
+    background: none;
+  }
+  .container .hamburger-menu {
+    visibility: visible;
   }
 }
 
@@ -465,15 +623,24 @@ footer #mc_embed_signup img {
     top: -15vh;
   }
   .banner__description p {
-    width: 60%;
+    width: 50%;
   }
   .banner__description .pair-btns {
     width: 50%;
   }
+  #desktop-navbar {
+    width: 65%;
+    left: 0;
+  }
 }
 
 @media only screen and (min-width: 816px) {
-  .banner, .accomplishments, .about, .success-stories, .blog-section, .twitter-posts {
+  .banner,
+  .accomplishments,
+  .about,
+  .success-stories,
+  .blog-section,
+  .twitter-posts {
     padding: 0 0 0 1.6em;
   }
   .banner__description h1 {
@@ -516,6 +683,10 @@ footer #mc_embed_signup img {
 }
 
 @media only screen and (min-width: 1270px) {
+  #desktop-navbar {
+    width: 40%;
+    left: 13%;
+  }
   .container {
     height: 70vh;
   }
@@ -530,12 +701,26 @@ footer #mc_embed_signup img {
   .banner__description .pencil-swoosh svg {
     top: 2.2em;
   }
+  .accomplishments {
+    width: 55%;
+    top: -11em;
+  }
+  .accomplishments .accomplishments__list div {
+    width: 25px;
+    height: 25px;
+  }
+  .accomplishments .accomplishments__list h2 {
+    font-size: 16px;
+  }
+  .accomplishments .accomplishments__list p {
+    font-size: 11px;
+  }
   .about .about__image-container {
     right: -5%;
   }
   .about .about__description {
     height: 50vh;
-    width: 40%;
+    width: 30%;
     position: relative;
     left: -10%;
     margin-top: 5em;
@@ -549,15 +734,21 @@ footer #mc_embed_signup img {
     line-height: 1.3em;
   }
   .about .about__description p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5em;
   }
-  .success-stories header h2, .blog-section header h2, .twitter-posts header h2 {
+  .success-stories header h2,
+  .blog-section header h2,
+  .twitter-posts header h2 {
     font-size: 40px;
     line-height: 1.2em;
   }
   footer form .clear {
     width: 30% !important;
+  }
+  footer .contact {
+    top: 3vh;
+    width: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
