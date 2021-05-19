@@ -3,6 +3,17 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9b9090;
+  border-radius: 15px;
+  -webkit-transition: all 5s linear;
+  transition: all 5s linear;
+}
+
 .mobile-logo {
   display: none;
   width: 60px;

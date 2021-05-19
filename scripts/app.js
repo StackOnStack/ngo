@@ -21,3 +21,5 @@ let slow = setInterval(()=>{
         hamburgerMenu.style.visibility="visible";
     }
 }, 10);
+
+

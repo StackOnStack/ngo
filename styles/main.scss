@@ -5,6 +5,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(155, 144, 144);
+    border-radius: 15px;
+    transition: all 5s linear;
+
+}
+
 .mobile-logo {
     display: none;
     width: 60px;
@@ -280,7 +292,7 @@ body {
         background-color: #000000;
         color: #ffffff;
         border: none;
-        padding:.3em 1em;
+        padding: .3em 1em;
         text-decoration: none;
     }
 }
@@ -411,16 +423,17 @@ body {
     .twitter-tweet {
         width: 40%;
         margin-right: .75em;
-        padding:1em;
-        p{
+        padding: 1em;
+
+        p {
             overflow-x: hidden;
-        }  
+        }
     }
 }
 
 footer {
     margin: 6em 0 0 0;
-    padding:3em 0;
+    padding: 3em 0;
     position: relative;
 
     #mc_embed_signup {
@@ -498,7 +511,7 @@ footer {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        color:#1c2435;
+        color: #1c2435;
 
         .footer-description {
             width: 35%;
@@ -506,10 +519,12 @@ footer {
         }
 
         ul {
-            margin-bottom:4em;
-            h2{
-                color:#010101;
+            margin-bottom: 4em;
+
+            h2 {
+                color: #010101;
             }
+
             li {
                 list-style-type: none;
                 margin-top: 1em;
@@ -526,32 +541,35 @@ footer {
         }
     }
 
-    .socials{
-        position:absolute;
-        bottom:0;
-        left:50%;
-        width:180px;
+    .socials {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 180px;
         transform: translateX(-50%);
-        ul{
-            display:flex;
+
+        ul {
+            display: flex;
             justify-content: space-around;
-            li{
+
+            li {
                 list-style-type: none;
-                .social-icon{
-                    fill:#ffffff;
+
+                .social-icon {
+                    fill: #ffffff;
                 }
 
-                .social-icon:hover{
-                    fill:#F3C41A;
+                .social-icon:hover {
+                    fill: #F3C41A;
                 }
             }
         }
     }
 
-    .bottom-wave{
-        position:absolute;
-        bottom:0;
-        z-index:-1;
+    .bottom-wave {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
     }
 }
 
@@ -637,29 +655,31 @@ footer {
         }
     }
 
-    .footer-content-container{
-        display:block !important;
+    .footer-content-container {
+        display: block !important;
 
-        .footer-description{
+        .footer-description {
             text-align: left;
-            width:80% !important;
-            position:relative;
-            left:50%;
+            width: 80% !important;
+            position: relative;
+            left: 50%;
             transform: translateX(-50%);
-            font-size:12px;
+            font-size: 12px;
         }
 
-        ul{
-            margin-top:2em;
-            iframe{
-                width:90%;
-                height:200px;
+        ul {
+            margin-top: 2em;
+
+            iframe {
+                width: 90%;
+                height: 200px;
             }
-            li{
-                font-size:12px;
+
+            li {
+                font-size: 12px;
             }
         }
-}
+    }
 
 }
 
