@@ -140,6 +140,8 @@ body {
 
 .pair-btns .pair-btns__colored {
   background-color: #000000;
+  text-align: center;
+  text-decoration: none;
   color: #ffffff;
   font-weight: 400;
   padding: .65em;
@@ -149,6 +151,7 @@ body {
 }
 
 .pair-btns .pair-btns__plain {
+  visibility: hidden;
   position: relative;
   width: 48%;
   text-align: center;
@@ -165,6 +168,7 @@ body {
 .pair-btns .pair-btns__colored:hover,
 .pair-btns .pair-btns__plain:hover {
   outline: 2px solid yellow;
+  background-color: #1c233a;
 }
 
 .accomplishments {
@@ -283,6 +287,7 @@ body {
 }
 
 .pair-btns1 .pair-btns__plain1 {
+  visibility: hidden;
   border: none;
   background: none;
   font-size: 12px;
@@ -298,6 +303,8 @@ body {
   background-color: #000000;
   color: #ffffff;
   border: none;
+  padding: .3em 1em;
+  text-decoration: none;
 }
 
 .success-stories {
