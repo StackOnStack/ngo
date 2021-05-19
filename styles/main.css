@@ -509,7 +509,6 @@ footer #mc_embed_signup img {
 }
 
 footer .footer-content-container {
-  width: 80%;
   padding: 2em;
   margin: 0 auto;
   display: -webkit-box;
@@ -602,6 +601,28 @@ footer .footer-content-container ul li a:hover {
   }
   .container .hamburger-menu {
     visibility: visible;
+  }
+  .footer-content-container {
+    display: block !important;
+  }
+  .footer-content-container .footer-description {
+    text-align: center;
+    width: 90% !important;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 12px;
+  }
+  .footer-content-container ul {
+    margin-top: 2em;
+  }
+  .footer-content-container ul iframe {
+    width: 90%;
+    height: 200px;
+  }
+  .footer-content-container ul li {
+    font-size: 12px;
   }
 }
 
