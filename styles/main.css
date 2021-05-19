@@ -430,11 +430,17 @@ body {
 .twitter-posts .twitter-tweet {
   width: 40%;
   margin-right: .75em;
+  padding: 1em;
+}
+
+.twitter-posts .twitter-tweet p {
+  overflow-x: hidden;
 }
 
 footer {
   margin: 6em 0 0 0;
-  background-color: #070726;
+  padding: 3em 0;
+  position: relative;
 }
 
 footer #mc_embed_signup {
@@ -517,12 +523,20 @@ footer .footer-content-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #ffffff;
+  color: #1c2435;
 }
 
 footer .footer-content-container .footer-description {
   width: 35%;
   margin: 3em 0 0 0;
+}
+
+footer .footer-content-container ul {
+  margin-bottom: 4em;
+}
+
+footer .footer-content-container ul h2 {
+  color: #010101;
 }
 
 footer .footer-content-container ul li {
@@ -532,7 +546,7 @@ footer .footer-content-container ul li {
 
 footer .footer-content-container ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #1c2435;
 }
 
 footer .footer-content-container ul li a:hover {
@@ -540,9 +554,12 @@ footer .footer-content-container ul li a:hover {
 }
 
 footer .socials {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   width: 180px;
-  margin: 0 auto;
-  border: 1px solid #070726;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .socials ul {
@@ -563,6 +580,12 @@ footer .socials ul li .social-icon {
 
 footer .socials ul li .social-icon:hover {
   fill: #F3C41A;
+}
+
+footer .bottom-wave {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 503px) {
