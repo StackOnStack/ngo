@@ -539,6 +539,32 @@ footer .footer-content-container ul li a:hover {
   color: #F3C41A;
 }
 
+footer .socials {
+  width: 180px;
+  margin: 0 auto;
+  border: 1px solid #070726;
+}
+
+footer .socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .socials ul li {
+  list-style-type: none;
+}
+
+footer .socials ul li .social-icon {
+  fill: #ffffff;
+}
+
+footer .socials ul li .social-icon:hover {
+  fill: #F3C41A;
+}
+
 @media only screen and (max-width: 503px) {
   .success-stories .stories-container {
     display: block;
@@ -606,8 +632,8 @@ footer .footer-content-container ul li a:hover {
     display: block !important;
   }
   .footer-content-container .footer-description {
-    text-align: center;
-    width: 90% !important;
+    text-align: left;
+    width: 80% !important;
     position: relative;
     left: 50%;
     -webkit-transform: translateX(-50%);

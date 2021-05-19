@@ -409,7 +409,6 @@ body {
 
 footer {
     margin: 6em 0 0 0;
-    // height: 80vh;
     background-color: #070726;
 
     #mc_embed_signup {
@@ -510,6 +509,26 @@ footer {
             }
         }
     }
+
+    .socials{
+        width:180px;
+        margin:0 auto;
+        border:1px solid #070726;
+        ul{
+            display:flex;
+            justify-content: space-around;
+            li{
+                list-style-type: none;
+                .social-icon{
+                    fill:#ffffff;
+                }
+
+                .social-icon:hover{
+                    fill:#F3C41A;
+                }
+            }
+        }
+    }
 }
 
 
@@ -598,8 +617,8 @@ footer {
         display:block !important;
 
         .footer-description{
-            text-align: center;
-            width:90% !important;
+            text-align: left;
+            width:80% !important;
             position:relative;
             left:50%;
             transform: translateX(-50%);
