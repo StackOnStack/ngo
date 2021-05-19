@@ -140,6 +140,8 @@ body {
 
 .pair-btns .pair-btns__colored {
   background-color: #000000;
+  text-align: center;
+  text-decoration: none;
   color: #ffffff;
   font-weight: 400;
   padding: .65em;
@@ -149,6 +151,7 @@ body {
 }
 
 .pair-btns .pair-btns__plain {
+  visibility: hidden;
   position: relative;
   width: 48%;
   text-align: center;
@@ -165,6 +168,7 @@ body {
 .pair-btns .pair-btns__colored:hover,
 .pair-btns .pair-btns__plain:hover {
   outline: 2px solid yellow;
+  background-color: #1c233a;
 }
 
 .accomplishments {
@@ -283,6 +287,7 @@ body {
 }
 
 .pair-btns1 .pair-btns__plain1 {
+  visibility: hidden;
   border: none;
   background: none;
   font-size: 12px;
@@ -298,6 +303,8 @@ body {
   background-color: #000000;
   color: #ffffff;
   border: none;
+  padding: .3em 1em;
+  text-decoration: none;
 }
 
 .success-stories {
@@ -430,11 +437,17 @@ body {
 .twitter-posts .twitter-tweet {
   width: 40%;
   margin-right: .75em;
+  padding: 1em;
+}
+
+.twitter-posts .twitter-tweet p {
+  overflow-x: hidden;
 }
 
 footer {
   margin: 6em 0 0 0;
-  background-color: #070726;
+  padding: 3em 0;
+  position: relative;
 }
 
 footer #mc_embed_signup {
@@ -509,7 +522,6 @@ footer #mc_embed_signup img {
 }
 
 footer .footer-content-container {
-  width: 80%;
   padding: 2em;
   margin: 0 auto;
   display: -webkit-box;
@@ -518,12 +530,20 @@ footer .footer-content-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #ffffff;
+  color: #1c2435;
 }
 
 footer .footer-content-container .footer-description {
   width: 35%;
   margin: 3em 0 0 0;
+}
+
+footer .footer-content-container ul {
+  margin-bottom: 4em;
+}
+
+footer .footer-content-container ul h2 {
+  color: #010101;
 }
 
 footer .footer-content-container ul li {
@@ -533,11 +553,46 @@ footer .footer-content-container ul li {
 
 footer .footer-content-container ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #1c2435;
 }
 
 footer .footer-content-container ul li a:hover {
   color: #F3C41A;
+}
+
+footer .socials {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+footer .socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .socials ul li {
+  list-style-type: none;
+}
+
+footer .socials ul li .social-icon {
+  fill: #ffffff;
+}
+
+footer .socials ul li .social-icon:hover {
+  fill: #F3C41A;
+}
+
+footer .bottom-wave {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 503px) {
@@ -602,6 +657,28 @@ footer .footer-content-container ul li a:hover {
   }
   .container .hamburger-menu {
     visibility: visible;
+  }
+  .footer-content-container {
+    display: block !important;
+  }
+  .footer-content-container .footer-description {
+    text-align: left;
+    width: 80% !important;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 12px;
+  }
+  .footer-content-container ul {
+    margin-top: 2em;
+  }
+  .footer-content-container ul iframe {
+    width: 90%;
+    height: 200px;
+  }
+  .footer-content-container ul li {
+    font-size: 12px;
   }
 }
 
