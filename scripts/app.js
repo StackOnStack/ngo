@@ -53,3 +53,14 @@ let slow = setInterval(()=>{
 }, 10);
 
 
+fetch("https://belmat786840504.wordpress.com/wp-json/wp/v2", {
+
+    headers:{
+        'mode': 'none',
+    }
+})
+.then(res => res.json())
+.then((data) => {
+    console.log(data);
+})
+.catch(err => console.log(err))
