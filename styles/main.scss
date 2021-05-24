@@ -433,7 +433,6 @@ body::-webkit-scrollbar-thumb {
 
 footer {
     margin: 6em 0 0 0;
-    padding: 3em 0;
     position: relative;
 
     #mc_embed_signup {
@@ -511,7 +510,8 @@ footer {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        color: #1c2435;
+        color: #fff;
+        background: #0e153a;
 
         .footer-description {
             width: 35%;
@@ -522,7 +522,7 @@ footer {
             margin-bottom: 4em;
 
             h2 {
-                color: #010101;
+                color: #fff;
             }
 
             li {
@@ -531,7 +531,7 @@ footer {
 
                 a {
                     text-decoration: none;
-                    color: #1c2435;
+                    color: #fff;
                 }
 
                 a:hover {
@@ -547,6 +547,7 @@ footer {
         left: 50%;
         width: 180px;
         transform: translateX(-50%);
+      
 
         ul {
             display: flex;
@@ -556,7 +557,7 @@ footer {
                 list-style-type: none;
 
                 .social-icon {
-                    fill: #ffffff;
+                    fill: #1da1f2;
                 }
 
                 .social-icon:hover {
@@ -564,12 +565,6 @@ footer {
                 }
             }
         }
-    }
-
-    .bottom-wave {
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
     }
 }
 
@@ -644,6 +639,11 @@ footer {
                     margin: 0 3em 0 0;
                     border: none;
                     background: none;
+                    transition:all 500ms ease-in-out;
+
+                }
+                button:hover{
+                    transform:scale(1.2);
                 }
             }
         }

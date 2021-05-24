@@ -457,7 +457,6 @@ body::-webkit-scrollbar-thumb {
 
 footer {
   margin: 6em 0 0 0;
-  padding: 3em 0;
   position: relative;
 }
 
@@ -541,7 +540,8 @@ footer .footer-content-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #1c2435;
+  color: #fff;
+  background: #0e153a;
 }
 
 footer .footer-content-container .footer-description {
@@ -554,7 +554,7 @@ footer .footer-content-container ul {
 }
 
 footer .footer-content-container ul h2 {
-  color: #010101;
+  color: #fff;
 }
 
 footer .footer-content-container ul li {
@@ -564,7 +564,7 @@ footer .footer-content-container ul li {
 
 footer .footer-content-container ul li a {
   text-decoration: none;
-  color: #1c2435;
+  color: #fff;
 }
 
 footer .footer-content-container ul li a:hover {
@@ -593,17 +593,11 @@ footer .socials ul li {
 }
 
 footer .socials ul li .social-icon {
-  fill: #ffffff;
+  fill: #1da1f2;
 }
 
 footer .socials ul li .social-icon:hover {
   fill: #F3C41A;
-}
-
-footer .bottom-wave {
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
 }
 
 @media only screen and (max-width: 503px) {
@@ -665,6 +659,12 @@ footer .bottom-wave {
     margin: 0 3em 0 0;
     border: none;
     background: none;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+  }
+  #mobile-navbar ul li button:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .container .hamburger-menu {
     visibility: visible;
